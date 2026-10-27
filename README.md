@@ -48,12 +48,15 @@ Abrir terminales independientes y seguir el orden de inicio:
 Paso 1: Iniciar ZooKeeper (Terminal 1)
 
 sudo /opt/Kafka/bin/zookeeper-server-start.sh /opt/Kafka/config/zookeeper.properties
+
 Paso 2: Iniciar el Broker de Apache Kafka (Terminal 2)
 
 sudo /opt/Kafka/bin/kafka-server-start.sh /opt/Kafka/config/server.properties
+
 Paso 3: Iniciar el Productor de Eventos (Terminal 3)
 
 python3 kafka_producer.py
+
 Paso 4: Iniciar el Consumidor de Spark Streaming (Terminal 4)
 
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 spark_streaming_consumer.py
