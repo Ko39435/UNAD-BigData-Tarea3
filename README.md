@@ -39,21 +39,21 @@ Este repositorio contiene la solución práctica de la **Tarea 3 - Procesamiento
 
 Para ejecutar el análisis por lotes con PySpark:
 
-```bash
+
 python3 tarea3_batch.py
 
 2. Ejecución del Procesamiento en Tiempo Real (Kafka + Spark Streaming)
 Abrir terminales independientes y seguir el orden de inicio:
 
 Paso 1: Iniciar ZooKeeper (Terminal 1)
-Bash
+
 sudo /opt/Kafka/bin/zookeeper-server-start.sh /opt/Kafka/config/zookeeper.properties
 Paso 2: Iniciar el Broker de Apache Kafka (Terminal 2)
-Bash
+
 sudo /opt/Kafka/bin/kafka-server-start.sh /opt/Kafka/config/server.properties
 Paso 3: Iniciar el Productor de Eventos (Terminal 3)
-Bash
+
 python3 kafka_producer.py
 Paso 4: Iniciar el Consumidor de Spark Streaming (Terminal 4)
-Bash
+
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 spark_streaming_consumer.py
