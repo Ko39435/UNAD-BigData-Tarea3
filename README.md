@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Descripción del Proyecto
+## Descripción del Proyecto
 
 Este repositorio contiene la solución práctica de la **Tarea 3 - Procesamiento de Datos con Apache Spark**, correspondiente al curso de Big Data. El proyecto abarca dos componentes principales:
 
@@ -16,7 +16,7 @@ Este repositorio contiene la solución práctica de la **Tarea 3 - Procesamiento
 
 ---
 
-## 📁 Estructura del Repositorio
+## Estructura del Repositorio
 
 * **`tarea3_batch.py`**: Script en PySpark para procesamiento en lote. Implementa transformaciones en DataFrames (`withColumn`, `groupBy`, `agg`) y operaciones nativas con RDDs (`filter`, `map`, `count`, `take`).
 * **`kafka_producer.py`**: Script en Python que actúa como productor de eventos, simulando lecturas de datos de sensores (temperatura y humedad) y enviándolos en formato JSON al *topic* `sensor_data` de Kafka.
@@ -25,7 +25,7 @@ Este repositorio contiene la solución práctica de la **Tarea 3 - Procesamiento
 
 ---
 
-## 🚀 Instrucciones de Ejecución
+## Instrucciones de Ejecución
 
 ### Prerrequisitos
 * Java JDK 8 o superior.
